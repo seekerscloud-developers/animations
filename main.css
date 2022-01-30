@@ -145,11 +145,66 @@ h1 {
     font-weight: bolder;
 }
 
+#ease{
+    animation-name: ease;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes ease {
+    from{transform: translateX(0)}
+    to{transform: translateX(900px)}
+}
+
+#linear{
+    animation-name: linear;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes linear {
+    from{transform: translateX(0)}
+    to{transform: translateX(900px)}
+}
+
+#ease-in{
+    animation-name: easein;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+@keyframes easein {
+    from{transform: translateX(0)}
+    to{transform: translateX(900px)}
+}
+
+#ease-out{
+    animation-name: easeout;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+@keyframes easeout {
+    from{transform: translateX(0)}
+    to{transform: translateX(900px)}
+}
+
+#ease-in-out{
+    /*animation-name: easeinout;*/
+    /*animation-duration: 2s;*/
+    /*animation-timing-function: ease-in-out;*/
+
+    /*animation shorthand property*/
+    animation-name: a1;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 
 
-
-
-
+    animation: animation1 8s ease-in 2s infinite alternate;
+}
+@keyframes easeinout {
+    from{transform: translateX(0)}
+    to{transform: translateX(900px)}
+}
 
 
 
