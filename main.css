@@ -103,25 +103,31 @@ h1 {
     width: 100px;
     height: 100px;
     background-color: brown;
-    animation: animation1;
+    animation-name: animation1;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 @keyframes animation1 {
     0%{
         background-color: green;
+        transform: translateX(0px);
     }
     25%{
         background-color: black;
+        transform: translateX(300px);
     }
     50%{
         background-color: blue;
+        transform: translate(300px,300px);
     }
     75%{
       background-color: aqua;
+        transform: translate(0px, 300px);
     }
     100%{
         background-color: blueviolet;
+        transform: translateX(0px);
     }
 }
 
