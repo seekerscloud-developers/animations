@@ -1,30 +1,32 @@
 h1 {
     text-align: center;
 }
+
 .item-common {
     width: 100px;
     height: 100px;
     background-color: green;
 }
+
 /*scale*/
-.item1:hover{
-    transform: scale(2);/*x=2 y=2*/
+.item1:hover {
+    transform: scale(2); /*x=2 y=2*/
     /*transform: scale(2,4);!*x=2 y=4*!
     transform: scaleX(2);!*x=2*!
     transform: scaleY(2);!*y=2*!*/
 }
+
 /*scale*/
 
 /*Skew*/
-.item2{
+.item2 {
     /*transform: skew(-20deg);*/
     /*transform: skewX(20deg);*/
     transform: skewY(20deg);
 }
-/*Skew*/
 
-/*animation-1*/
-.wrapper-main{
+/*Skew*/
+.wrapper-main {
     width: 100%;
     height: 200px;
     border: 1px solid red;
@@ -34,29 +36,53 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-.inner-items{
+
+.inner {
     width: 100px;
     height: 100px;
     margin-right: 10px;
     background-color: brown;
+}
+
+/*animation-1*/
+.inner-items-1 {
     transform: skew(20deg);
     animation: animation1;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
 @keyframes animation1 {
-   /*from{
-       transform: skewX(20deg);
-   }
-    to{
-        transform: skewX(-20deg);
-    }*/
-    0%{
+    /*from{
+        transform: skewX(20deg);
+    }
+     to{
+         transform: skewX(-20deg);
+     }*/
+    0% {
         transform: skew(20deg, 20deg);
     }
-    100%{
+    100% {
         transform: skew(-20deg, -20deg);
     }
 }
+
 /*animation-1*/
+
+/*animation 2*/
+.inner-items-2 {
+    animation: animation2 3s infinite;
+    animation-direction: normal;
+}
+
+@keyframes animation2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*animation 2*/
