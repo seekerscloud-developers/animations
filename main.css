@@ -98,7 +98,7 @@ h1 {
 
 
 
-
+/*
 .item{
     width: 100px;
     height: 100px;
@@ -107,6 +107,7 @@ h1 {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-delay: 5s;
 }
 @keyframes animation1 {
     0%{
@@ -129,9 +130,20 @@ h1 {
         background-color: blueviolet;
         transform: translateX(0px);
     }
+}*/
+
+.item{
+    background-color: blue;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
 }
-
-
 
 
 
