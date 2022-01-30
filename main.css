@@ -73,15 +73,17 @@ h1 {
 /*animation 2*/
 .inner-items-2 {
     animation: animation2 3s infinite;
-    animation-direction: normal;
+    animation-direction: alternate;
 }
 
 @keyframes animation2 {
     from {
-        transform: rotate(0deg);
+        transform: rotate(0deg) translateX(0);
+        /*transform: translateX(0);*/
     }
     to {
-        transform: rotate(360deg);
+        transform: rotate(360deg) translateX(200px);
+       /* transform: translateX(200px);*/
     }
 }
 
