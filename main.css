@@ -1,3 +1,4 @@
+/*
 h1 {
     text-align: center;
 }
@@ -8,24 +9,24 @@ h1 {
     background-color: green;
 }
 
-/*scale*/
+!*scale*!
 .item1:hover {
-    transform: scale(2); /*x=2 y=2*/
-    /*transform: scale(2,4);!*x=2 y=4*!
+    transform: scale(2); !*x=2 y=2*!
+    !*transform: scale(2,4);!*x=2 y=4*!
     transform: scaleX(2);!*x=2*!
-    transform: scaleY(2);!*y=2*!*/
+    transform: scaleY(2);!*y=2*!*!
 }
 
-/*scale*/
+!*scale*!
 
-/*Skew*/
+!*Skew*!
 .item2 {
-    /*transform: skew(-20deg);*/
-    /*transform: skewX(20deg);*/
+    !*transform: skew(-20deg);*!
+    !*transform: skewX(20deg);*!
     transform: skewY(20deg);
 }
 
-/*Skew*/
+!*Skew*!
 .wrapper-main {
     width: 100%;
     height: 200px;
@@ -44,7 +45,7 @@ h1 {
     background-color: brown;
 }
 
-/*animation-1*/
+!*animation-1*!
 .inner-items-1 {
     transform: skew(20deg);
     animation: animation1;
@@ -54,12 +55,12 @@ h1 {
 }
 
 @keyframes animation1 {
-    /*from{
+    !*from{
         transform: skewX(20deg);
     }
      to{
          transform: skewX(-20deg);
-     }*/
+     }*!
     0% {
         transform: skew(20deg, 20deg);
     }
@@ -68,9 +69,9 @@ h1 {
     }
 }
 
-/*animation-1*/
+!*animation-1*!
 
-/*animation 2*/
+!*animation 2*!
 .inner-items-2 {
     animation: animation2 3s infinite;
     animation-direction: alternate;
@@ -79,12 +80,61 @@ h1 {
 @keyframes animation2 {
     from {
         transform: rotate(0deg) translateX(0);
-        /*transform: translateX(0);*/
+        !*transform: translateX(0);*!
     }
     to {
         transform: rotate(360deg) translateX(200px);
-       /* transform: translateX(200px);*/
+       !* transform: translateX(200px);*!
     }
 }
 
-/*animation 2*/
+!*animation 2*!
+*/
+
+
+
+
+
+
+
+
+
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation: animation1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes animation1 {
+    0%{
+        background-color: green;
+    }
+    25%{
+        background-color: black;
+    }
+    50%{
+        background-color: blue;
+    }
+    75%{
+      background-color: aqua;
+    }
+    100%{
+        background-color: blueviolet;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
